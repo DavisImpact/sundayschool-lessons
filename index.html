@@ -9,11 +9,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
         
-        :root {
-            --primary: #1e3a5f;
-            --accent: #c9a227;
-        }
-        
         body {
             font-family: 'Inter', system_ui, sans-serif;
         }
@@ -28,11 +23,6 @@
         .lesson-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
-        .nav-active {
-            color: #c9a227;
-            font-weight: 600;
         }
     </style>
 </head>
@@ -51,7 +41,7 @@
             </div>
             
             <div class="flex items-center gap-x-2 text-sm">
-                <span class="px-3 py-1.5 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">June 21, 2026</span>
+                <span class="px-3 py-1.5 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">Facilitator Resources</span>
             </div>
         </div>
     </nav>
@@ -61,51 +51,33 @@
         <div class="text-center mb-16">
             <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-white rounded-full border border-slate-200 mb-6">
                 <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                <span class="text-sm font-medium text-slate-600">Current Lesson</span>
+                <span class="text-sm font-medium text-slate-600">Facilitator Resources</span>
             </div>
             
-            <h1 class="text-6xl font-bold tracking-tighter heading-serif text-[#1e3a5f] mb-4">The Battle Is the Lord’s</h1>
-            <p class="text-xl text-slate-600 max-w-md mx-auto">1 Samuel 17–18; 24–26; 2 Samuel 5–7</p>
+            <h1 class="text-6xl font-bold tracking-tighter heading-serif text-[#1e3a5f] mb-4">Sunday School</h1>
+            <p class="text-xl text-slate-600 max-w-md mx-auto">Facilitator notes and lesson outlines for the Aiea Ward Adult Sunday School</p>
         </div>
 
-        <!-- Two Cards -->
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            
-            <!-- Student Card -->
-            <a href="student.html" class="group lesson-card bg-white border border-slate-200 rounded-3xl p-8 hover:border-amber-200 flex flex-col">
-                <div class="flex-1">
-                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors">
-                        <i class="fa-solid fa-users text-emerald-600 text-3xl"></i>
-                    </div>
-                    
-                    <h2 class="text-3xl font-semibold tracking-tight mb-3">For Students</h2>
-                    <p class="text-slate-600 leading-relaxed mb-8">Prepare for class. Reflect on the scriptures and discover what you want to share with the group.</p>
-                </div>
-                
-                <div class="flex items-center justify-between pt-6 border-t border-slate-100">
-                    <span class="font-medium text-emerald-600 group-hover:text-emerald-700 transition-colors">Open Student Page →</span>
-                </div>
-            </a>
-
-            <!-- Facilitator Card -->
-            <a href="facilitator.html" class="group lesson-card bg-white border border-slate-200 rounded-3xl p-8 hover:border-amber-200 flex flex-col">
-                <div class="flex-1">
+        <!-- Facilitator Card -->
+        <div class="max-w-md mx-auto">
+            <a href="facilitator.html" class="group lesson-card block bg-white border border-slate-200 rounded-3xl p-8 hover:border-amber-200">
+                <div>
                     <div class="w-14 h-14 bg-[#1e3a5f] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#162d4a] transition-colors">
                         <i class="fa-solid fa-chalkboard-teacher text-white text-3xl"></i>
                     </div>
                     
-                    <h2 class="text-3xl font-semibold tracking-tight mb-3">For Facilitators</h2>
-                    <p class="text-slate-600 leading-relaxed mb-8">Teaching notes and discussion prompts. Designed for easy use while leading the class.</p>
+                    <h2 class="text-3xl font-semibold tracking-tight mb-3">Facilitator Notes</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">Current lesson teaching notes and discussion prompts. Designed for easy use while leading class on your iPad.</p>
                 </div>
                 
                 <div class="flex items-center justify-between pt-6 border-t border-slate-100">
-                    <span class="font-medium text-[#1e3a5f] group-hover:text-[#162d4a] transition-colors">Open Facilitator Page →</span>
+                    <span class="font-medium text-[#1e3a5f] group-hover:text-[#162d4a] transition-colors">Open Current Lesson →</span>
                 </div>
             </a>
         </div>
 
         <div class="text-center mt-16 text-sm text-slate-500">
-            <p>More lessons will be added each week.</p>
+            <p>New facilitator notes are added each week.</p>
         </div>
     </div>
 </body>
