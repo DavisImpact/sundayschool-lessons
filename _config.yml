@@ -1,0 +1,15 @@
+title: "Sunday School | Aiea Ward"
+description: "Facilitator resources for the Adult Sunday School class"
+url: "https://davisimpact.github.io"
+baseurl: "/sundayschool-lessons"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude files
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

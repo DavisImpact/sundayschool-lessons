@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+    
+    body {
+      font-family: 'Inter', system_ui, sans-serif;
+    }
+    .heading-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .prompt-box {
+      background-color: #fefce8;
+      border-left: 4px solid #c9a227;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+  <!-- Top Navigation -->
+  <nav class="bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-x-3">
+        <a href="{{ site.baseurl }}/" class="flex items-center gap-x-2">
+          <div class="w-9 h-9 bg-[#1e3a5f] rounded-xl flex items-center justify-center">
+            <i class="fa-solid fa-book text-white text-xl"></i>
+          </div>
+          <div>
+            <span class="font-semibold text-xl tracking-tight">Sunday School</span>
+            <span class="text-slate-500 text-sm block -mt-1">Aiea Ward</span>
+          </div>
+        </a>
+      </div>
+      
+      <div>
+        <a href="{{ site.baseurl }}/facilitator.html" class="text-sm font-medium text-[#1e3a5f] hover:text-[#162d4a]">
+          Current Lesson
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="mt-16 py-8 text-center text-sm text-slate-500 border-t border-slate-200">
+    <p>Aiea Ward • Adult Sunday School • Facilitator Resources</p>
+  </footer>
+</body>
+</html>
