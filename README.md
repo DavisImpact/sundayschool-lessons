@@ -1,12 +1,21 @@
-# Sunday School Lessons – Aiea Ward
+# Sunday School Lessons – Aiea Ward (Facilitator Resources)
 
-Facilitator resources for the Adult Sunday School class in the Aiea Ward.
+This Jekyll site contains facilitator notes for the Adult Sunday School class.
 
 ## Current Lesson
-- [Facilitator Notes](facilitator.html) – The Battle Is the Lord’s (June 21, 2026)
+- [The Battle Is the Lord’s](facilitator/2026-06-21) – June 21, 2026
 
-## How This Site Works
-Each week, new facilitator notes are added as a dedicated page. The site is designed to be simple and practical for use while teaching.
+## How to Add a New Week
+1. Create a new file in `facilitator/YYYY-MM-DD.md`
+2. Use the front matter:
+   ```yaml
+   ---
+   layout: default
+   title: "Lesson Title - Facilitator Notes"
+   date: YYYY-MM-DD
+   ---
+   ```
+3. Update `index.md` to link to the new lesson.
 
 ## Philosophy
-This site supports a facilitator approach: helping class members share what they learned, felt, and were prompted to change from their personal study.
+This site supports a facilitator approach to teaching.
