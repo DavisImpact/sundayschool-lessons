@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday School | Aiea Ward</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #1e3a5f;
+            --accent: #c9a227;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .lesson-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .lesson-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .nav-active {
+            color: #c9a227;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <div class="w-9 h-9 bg-[#1e3a5f] rounded-xl flex items-center justify-center">
+                    <i class="fa-solid fa-book text-white text-xl"></i>
+                </div>
+                <div>
+                    <span class="font-semibold text-xl tracking-tight">Sunday School</span>
+                    <span class="text-slate-500 text-sm block -mt-1">Aiea Ward</span>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-x-2 text-sm">
+                <span class="px-3 py-1.5 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">June 21, 2026</span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-6 py-16">
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-x-2 px-4 py-1.5 bg-white rounded-full border border-slate-200 mb-6">
+                <div class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+                <span class="text-sm font-medium text-slate-600">Current Lesson</span>
+            </div>
+            
+            <h1 class="text-6xl font-bold tracking-tighter heading-serif text-[#1e3a5f] mb-4">The Battle Is the Lord’s</h1>
+            <p class="text-xl text-slate-600 max-w-md mx-auto">1 Samuel 17–18; 24–26; 2 Samuel 5–7</p>
+        </div>
+
+        <!-- Two Cards -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            
+            <!-- Student Card -->
+            <a href="student.html" class="group lesson-card bg-white border border-slate-200 rounded-3xl p-8 hover:border-amber-200 flex flex-col">
+                <div class="flex-1">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-emerald-200 transition-colors">
+                        <i class="fa-solid fa-users text-emerald-600 text-3xl"></i>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold tracking-tight mb-3">For Students</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">Prepare for class. Reflect on the scriptures and discover what you want to share with the group.</p>
+                </div>
+                
+                <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                    <span class="font-medium text-emerald-600 group-hover:text-emerald-700 transition-colors">Open Student Page →</span>
+                </div>
+            </a>
+
+            <!-- Facilitator Card -->
+            <a href="facilitator.html" class="group lesson-card bg-white border border-slate-200 rounded-3xl p-8 hover:border-amber-200 flex flex-col">
+                <div class="flex-1">
+                    <div class="w-14 h-14 bg-[#1e3a5f] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-[#162d4a] transition-colors">
+                        <i class="fa-solid fa-chalkboard-teacher text-white text-3xl"></i>
+                    </div>
+                    
+                    <h2 class="text-3xl font-semibold tracking-tight mb-3">For Facilitators</h2>
+                    <p class="text-slate-600 leading-relaxed mb-8">Teaching notes and discussion prompts. Designed for easy use while leading the class.</p>
+                </div>
+                
+                <div class="flex items-center justify-between pt-6 border-t border-slate-100">
+                    <span class="font-medium text-[#1e3a5f] group-hover:text-[#162d4a] transition-colors">Open Facilitator Page →</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="text-center mt-16 text-sm text-slate-500">
+            <p>More lessons will be added each week.</p>
+        </div>
+    </div>
+</body>
+</html>
